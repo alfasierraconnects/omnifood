@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Omnifood</title>
+    <link rel="icon" href="./content/img/favicon.png" type="image/png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,7 +18,7 @@
   </head>
   <body>
     <header class="header nav-open">
-      <a href="#"
+      <a href="#home"
         ><img
           class="logo-img"
           src="content/img/omnifood-logo.png"
@@ -26,11 +27,17 @@
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">How it works</a></li>
-          <li><a class="main-nav-link" href="#">Meals</a></li>
-          <li><a class="main-nav-link" href="#">Testimonials</a></li>
-          <li><a class="main-nav-link" href="#">Pricing</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
+          <li>
+            <a class="main-nav-link" href="#how-it-works">How it works</a>
+          </li>
+          <li><a class="main-nav-link" href="#meals">Meals</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+          <li>
+            <a class="main-nav-link nav-cta" href="#cta">Try for free</a>
+          </li>
         </ul>
       </nav>
 
@@ -40,7 +47,7 @@
       </button>
     </header>
     <main>
-      <section class="section-hero">
+      <section class="section-hero" id="home">
         <div class="hero">
           <div class="hero-text-box">
             <h1 class="heading-primary">
@@ -51,8 +58,8 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn btn-eatwell rgt">Start Eating Well</a>
-            <a href="#" class="btn btn-learn">Learn More &darr;</a>
+            <a href="#cta" class="btn btn-eatwell rgt">Start Eating Well</a>
+            <a href="#how-it-works" class="btn btn-learn">Learn More &darr;</a>
             <div class="delivered">
               <div class="delivered-images">
                 <img
@@ -112,7 +119,7 @@
           </div>
         </div>
       </section>
-      <section class="section-how">
+      <section class="section-how" id="how-it-works">
         <div class="container">
           <span class="subheading">How it works</span>
           <h2 class="heading-secondary">
@@ -173,7 +180,7 @@
           </div>
         </div>
       </section>
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container">
           <span class="subheading center-text">Meals</span>
           <h2 class="heading-secondary center-text">
@@ -281,10 +288,10 @@
           </div>
         </div>
         <div class="container all-recipes-link">
-          <a class="link" href="#">See all Recipes &rarr;</a>
+          <a class="link" href="#meals">See all Recipes &rarr;</a>
         </div>
       </section>
-      <section class="testimonials">
+      <section class="testimonials" id="testimonials">
         <div class="testimonials-review">
           <p class="subheading">TESTIMONIALS</p>
           <h3 class="heading-secondary">Once you try it, you can't go back</h3>
@@ -427,7 +434,7 @@
           </figure>
         </div>
       </section>
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container">
           <span class="subheading">pricing</span>
           <h2 class="heading-secondary">
@@ -456,7 +463,7 @@
                 <ion-icon class="icon" name="close-outline"></ion-icon>
               </li>
             </ul>
-            <a href="#" class="btn btn-eatwell">Start Eating Well</a>
+            <a href="#cta" class="btn btn-eatwell">Start Eating Well</a>
           </div>
           <div class="pricing-box complete">
             <span class="chip">BEST VALUE</span>
@@ -481,7 +488,7 @@
                 access to latest recipes
               </li>
             </ul>
-            <a href="#" class="btn btn-eatwell">Start Eating Well</a>
+            <a href="#cta" class="btn btn-eatwell">Start Eating Well</a>
           </div>
         </div>
         <p class="feature-text">
@@ -523,7 +530,7 @@
           </div>
         </div>
       </section>
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -581,7 +588,7 @@
   <footer class="footer">
     <section class="container grid grid--5-cols">
       <div class="footer-logos">
-        <a href="#"
+        <a href="#home"
           ><img
             class="logo-img"
             src="content/img/omnifood-logo.png"
@@ -645,4 +652,5 @@
     nomodule
     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
   ></script>
+  <script src="/index.js"></script>
 </html>
